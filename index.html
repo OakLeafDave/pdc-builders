@@ -15,7 +15,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 
 <script type="application/ld+json">
@@ -38,51 +38,49 @@
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
   <div class="wrap header-inner">
+    <span class="header-side" aria-hidden="true"></span>
     <a href="#top" class="brand" aria-label="PDC Builders home">
       <img class="logo-light" src="assets/img/logo-light.png" alt="PDC Builders">
       <img class="logo-dark" src="assets/img/logo-dark.png" alt="PDC Builders">
     </a>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="#build">Our Homes</a>
-      <a href="#residence">Portfolio</a>
-      <a href="#process">Process</a>
-      <a href="#about">Our Story</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-side header-right">
+      <a href="#contact" class="header-contact">Contact</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- ============ FULLSCREEN DROP-DOWN MENU ============ -->
+<div class="menu-panel" id="menu-panel" aria-hidden="true">
+  <nav class="menu-nav" aria-label="Primary">
+    <a href="#build"><span class="m-line"></span>Our Homes</a>
+    <a href="#residence"><span class="m-line"></span>Portfolio</a>
+    <a href="#services"><span class="m-line"></span>Services</a>
+    <a href="#process"><span class="m-line"></span>Process</a>
+    <a href="#about"><span class="m-line"></span>Our Story</a>
+    <a href="#contact"><span class="m-line"></span>Contact</a>
+  </nav>
+  <div class="menu-foot">
+    <a href="tel:+16097097836">(609) 709-7836</a>
+    <a href="mailto:Joem@pdcbuilders.com">Joem@pdcbuilders.com</a>
+    <span>Manahawkin · LBI · Ocean County, NJ</span>
+  </div>
+</div>
 
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-slides" id="hero-slides">
-    <div class="slide active" data-caption="Beach Haven, NJ"><img data-parallax="0.12" src="assets/img/exterior-front.jpg" alt="Custom coastal home built by PDC Builders in Beach Haven, NJ"></div>
-    <div class="slide" data-caption="Custom Entry · LBI"><img data-parallax="0.12" src="assets/img/exterior-entry.jpg" alt="Grand covered entry of a PDC custom home"></div>
-    <div class="slide" data-caption="Rooftop Deck · LBI"><img data-parallax="0.12" src="assets/img/rooftop-view.jpg" alt="Rooftop deck with island views on a PDC custom home"></div>
+    <div class="slide active" data-caption="Beach Haven, NJ"><img data-parallax="0.20" src="assets/img/exterior-front.jpg" alt="Custom coastal home built by PDC Builders in Beach Haven, NJ"></div>
+    <div class="slide" data-caption="Custom Entry · LBI"><img data-parallax="0.20" src="assets/img/exterior-entry.jpg" alt="Grand covered entry of a PDC custom home"></div>
+    <div class="slide" data-caption="Rooftop Deck · LBI"><img data-parallax="0.20" src="assets/img/rooftop-view.jpg" alt="Rooftop deck with island views on a PDC custom home"></div>
   </div>
   <div class="hero-inner">
-    <p class="eyebrow">Manahawkin · Long Beach Island · 35+ Years</p>
-    <h1>Custom homes for<br>those who build <em>once.</em></h1>
-    <p class="lede">
-      For more than three decades, PDC Builders has designed and crafted distinctive
-      custom homes along the Jersey Shore — committed to custom design with superior quality.
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-gold">Start Your Home
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a href="#residence" class="btn btn-outline">View Portfolio</a>
-    </div>
+    <h1 class="hero-title">Luxury Custom Home Builders</h1>
+    <span class="hero-divider"></span>
+    <p class="hero-sub">Custom coastal homes for those with discerning taste.</p>
   </div>
-  <button class="hero-arrow hero-prev" aria-label="Previous home">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
-  </button>
-  <button class="hero-arrow hero-next" aria-label="Next home">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
-  </button>
-  <p class="hero-caption" id="hero-caption">Beach Haven, NJ</p>
   <div class="hero-dots" id="hero-dots" role="tablist" aria-label="Featured homes">
     <button class="on" aria-label="Slide 1"></button>
     <button aria-label="Slide 2"></button>
@@ -165,7 +163,7 @@
   <div class="wrap">
     <div class="masonry">
       <div class="m-img tall reveal">
-        <img data-parallax="0.10" src="assets/img/foyer.jpg" alt="Custom millwork and staircase in a PDC home">
+        <img data-parallax="0.14" src="assets/img/foyer.jpg" alt="Custom millwork and staircase in a PDC home">
       </div>
       <div class="masonry-quote reveal">
         <span class="mark">&ldquo;</span>
@@ -173,7 +171,7 @@
         <cite>The PDC Standard</cite>
       </div>
       <div class="m-img small up reveal">
-        <img data-parallax="0.28" src="assets/img/detail-shower.jpg" alt="Tiled shower with brass fixtures">
+        <img data-parallax="0.34" src="assets/img/detail-shower.jpg" alt="Tiled shower with brass fixtures">
       </div>
     </div>
   </div>
@@ -188,7 +186,7 @@
     </div>
 
     <div class="svc-row reveal" id="svc-new">
-      <div class="svc-media"><img data-parallax="0.18" src="assets/img/exterior-front-2.jpg" alt="Custom new construction home"></div>
+      <div class="svc-media"><img data-parallax="0.26" src="assets/img/exterior-front-2.jpg" alt="Custom new construction home"></div>
       <div class="svc-txt">
         <span class="svc-num">i.</span>
         <h3>Custom Home Construction</h3>
@@ -198,7 +196,7 @@
     </div>
 
     <div class="svc-row flip reveal" id="svc-reno">
-      <div class="svc-media"><img data-parallax="0.18" src="assets/img/kitchen-2.jpg" alt="Renovated coastal kitchen"></div>
+      <div class="svc-media"><img data-parallax="0.26" src="assets/img/kitchen-2.jpg" alt="Renovated coastal kitchen"></div>
       <div class="svc-txt">
         <span class="svc-num">ii.</span>
         <h3>Renovations &amp; Additions</h3>
@@ -208,7 +206,7 @@
     </div>
 
     <div class="svc-row reveal" id="svc-raise">
-      <div class="svc-media"><img data-parallax="0.18" src="assets/img/exterior-elevation.jpg" alt="Elevated shore home"></div>
+      <div class="svc-media"><img data-parallax="0.26" src="assets/img/exterior-elevation.jpg" alt="Elevated shore home"></div>
       <div class="svc-txt">
         <span class="svc-num">iii.</span>
         <h3>House Raising</h3>
@@ -218,7 +216,7 @@
     </div>
 
     <div class="svc-row flip reveal" id="svc-modular">
-      <div class="svc-media"><img data-parallax="0.18" src="assets/img/exterior-side.jpg" alt="Custom modular home"></div>
+      <div class="svc-media"><img data-parallax="0.26" src="assets/img/exterior-side.jpg" alt="Custom modular home"></div>
       <div class="svc-txt">
         <span class="svc-num">iv.</span>
         <h3>Custom Modular Homes</h3>
@@ -249,7 +247,7 @@
 <section class="section" id="about">
   <div class="wrap about-grid">
     <div class="about-media reveal">
-      <div class="about-frame"><img data-parallax="0.16" src="assets/img/exterior-entry.jpg" alt="Custom coastal home built by PDC Builders"></div>
+      <div class="about-frame"><img data-parallax="0.22" src="assets/img/exterior-entry.jpg" alt="Custom coastal home built by PDC Builders"></div>
       <div class="badge"><b>35+</b><span>Years on LBI</span></div>
     </div>
     <div class="about-text reveal">
@@ -279,7 +277,7 @@
 
 <!-- ============ CTA BAND ============ -->
 <section class="cta-band">
-  <img data-parallax="0.14" src="assets/img/rooftop-deck.jpg" alt="Rooftop deck of a PDC custom home">
+  <img data-parallax="0.20" src="assets/img/rooftop-deck.jpg" alt="Rooftop deck of a PDC custom home">
   <div class="wrap">
     <p class="eyebrow on-dark">Begin the Conversation</p>
     <h2>Your custom home on the shore starts here.</h2>
