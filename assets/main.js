@@ -89,7 +89,7 @@
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.reveal, .stagger').forEach(function (el) { io.observe(el); });
+  document.querySelectorAll('.reveal, .reveal-l, .reveal-r, .reveal-scale, .stagger').forEach(function (el) { io.observe(el); });
 
   // featured residence scroller
   var scroller = document.getElementById('scroller');
